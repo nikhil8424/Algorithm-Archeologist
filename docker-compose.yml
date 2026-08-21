@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  algorithm-archaeologist:
+    build: .
+    container_name: algorithm_archaeologist_app
+    ports:
+      - "3000:3000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - LLM_MODEL=${LLM_MODEL:-gemini-2.5-flash}
+      - SANDBOX_TIMEOUT_SECONDS=3.0
+      - SANDBOX_MAX_MEMORY_MB=256.0
+    volumes:
+      - ./experiments:/app/experiments
+      - ./reports:/app/reports
+      - ./sandbox:/app/sandbox
+      - ./experiments.db:/app/experiments.db
+    restart: unless-stopped

@@ -1,0 +1,28 @@
+# Dependencies and build outputs
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Python caches and artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+experiments.db
+
+# Exclude non-Python runtime web bridge files from GitHub export
+/src/
+/server.ts
+/index.html
+/vite.config.ts
+/tsconfig.json
+/package.json
+/metadata.json
+/assets/
+
