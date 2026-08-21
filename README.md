@@ -200,17 +200,6 @@ Algorithm Archaeologist can support research into:
 - [ ] Strengthen execution isolation
 - [ ] Add research-grade evaluation datasets
 
-## 👨‍💻 Author
 
-**Nikhil Gupta**  
-Computer Science | AI & ML | Agentic AI | Algorithms
-
-GitHub: https://github.com/nikhil8424
-
-## 📄 License
-
-Add the project's selected open-source license before publishing for reuse.
-
----
 
 > **Dig deeper. Test harder. Benchmark everything. Discover better algorithms.**
